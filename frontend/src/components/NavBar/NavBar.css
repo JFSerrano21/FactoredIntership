@@ -1,0 +1,32 @@
+/* NavBar styling */
+.navbar {
+  background-color: var(--color-dark1);
+  width: 100%;
+  display: flex; /* To make its children align in a row */
+  align-items: center; /* To vertically center align the items */
+  position: fixed; /* Makes the navbar stick to the top of the page */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensuring the navbar remains on top of other content */
+}
+
+.navbar-logo {
+  height: 50px; /* You can adjust this depending on the size you want for the logo */
+  margin-left: 20px; /* Adds a bit of space from the left edge of the screen */
+}
+
+.navbar-home {
+  background-color: var(--color-accent);
+  color: var(--color-neutral);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 20px; /* Adds a bit of space from the right edge of the screen */
+}
+
+.navbar-home:hover {
+  background-color: var(--color-primary);
+}

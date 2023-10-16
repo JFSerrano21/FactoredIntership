@@ -1,0 +1,61 @@
+.login-container {
+    width: calc(100% - 40px); /* This deducts 20px margin from both left and right */
+    margin: 0 20px; /* 20px margin on left and right */
+    background-color: var(--color-neutral);
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 20px; 
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally centering form content */
+    width: 100%; /* Ensuring form takes the full width of the container */
+}
+
+.login-input {
+    width: 80%; /* Ensuring input fields take full width */
+    margin-bottom: 15px; /* Spacing between inputs */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--color-dark1);
+}
+
+input {
+    width: 100%;
+    padding: 8px; 
+    border-radius: 5px;
+    border: 1px solid var(--color-dark2);
+    font-size: 16px;
+    color: var(--color-dark2);
+    font-family: 'Roboto Slab', serif;
+}
+
+button {
+    width: 100%;
+    padding: 8px 16px; 
+    background-color: var(--color-primary);
+    color: var(--color-neutral);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-accent);
+}
